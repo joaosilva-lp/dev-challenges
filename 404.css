@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.title{
+    margin: 40px 25px 200px 77px;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 77px;
+    width: 50;
+}
+
+img{
+    width: 35%;
+}
+
+h2{
+    font-family: 'Space Mono', monospace;
+    font-size: 64px;
+    width: 600px;
+}
