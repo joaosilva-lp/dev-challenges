@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -12,14 +15,14 @@
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: row;
-    margin-left: 77px;
-    width: 50;
+    flex-wrap: wrap;
+
 }
 
 img{
-    width: 35%;
+    width: 600px;
 }
 
 h2{
