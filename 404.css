@@ -1,33 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,700;1,800&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,700;1,800&family=Montserrat:wght@700&family=Space+Mono&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .title{
-    margin: 40px 25px 100px 77px;
+    margin: 40px 25px 150px 77px;
     font-family: 'Inconsolata', monospace;
     
 }
 
 .grid{
-    padding: 50px;
+
     display: grid;
     justify-content: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 30% 30% 30%;
-    max-width: 100%;
+    grid-template-rows: 3% 3% 3%;
+  
+    height: 20%;
 }
 
 img{
-    height: 55%;
+    width: 100%;
+    height: auto;
+    min-width: 75%;
     grid-column-start: 1;   
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin-left:75px;
+    z-index: 9999;
 }
 
 .flex{
@@ -67,7 +71,46 @@ button{
 
 }
 
-a{
-    text-decoration: none;
+a, a:active, a:focus{
+    text-decoration: none!important;
     font-weight: bolder;
 }
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    color: #BDBDBD;
+    text-decoration: none!important;
+    text-align: center;
+    margin-top: 20%;
+}
+
+@media only screen and (max-width: 949px) {
+    body {
+      background-color: lightblue;
+      margin-left: 0!important;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 75%;
+    }
+
+    .item{
+        margin-top: 10%;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    h2{
+        font-size: 2rem;
+        text-overflow: clip;
+    }
+
+    footer{
+        margin-bottom: 20px;
+    }
+  }
