@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,700;1,800&family=Space+Mono&display=swap');
 
 *{
     margin: 0;
@@ -19,30 +19,56 @@
     justify-content: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 30% 30% 30%;
+    max-width: 100%;
 }
 
 img{
-    width: 600px;
-    grid-column-end: 2;
-    padding-right: 77px;
-    }
+    height: 55%;
+    grid-column-start: 1;   
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
 .flex{
+    margin-left: 20%;
     grid-column-start: 3;
-    padding-left: 20px;
+    grid-column-end: 6;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 h2{
     font-family: 'Space Mono', monospace;
     font-size: 64px;
+    font-weight: 700;
     width: 600px;
+}
+
+p{
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    border: 3px solid black;
+    width: 65%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
 
 button{
     background-color: #333333;
     color: #FFFFFF;
-    padding: 10px 20px 10px 20px;
+    padding: 25px 40px 25px 40px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
 }
