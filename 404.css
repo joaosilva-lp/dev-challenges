@@ -86,8 +86,9 @@ footer{
 
 @media only screen and (max-width: 949px) {
     body {
-      background-color: lightblue;
-      margin-left: 0!important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     }
 
     .grid{
@@ -106,8 +107,16 @@ footer{
     }
 
     h2{
-        font-size: 2rem;
-        text-overflow: clip;
+        font-size: 2.5rem;
+        width: 100%;
+
+
+    }
+
+    p{
+        font-size: 1.3rem;
+        width: 130%;
+
     }
 
     footer{
